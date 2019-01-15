@@ -1,8 +1,17 @@
 /*导航*/
 .top{
 	width: 100%;
-	height: 36px;
 	background-color: #f5f5f5;
+}
+.top .top-image{
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	background-color: #e8113d;
+}
+.top .top-image img{
+	width: 1193px;
+	height: 100%;
 }
 .top .topL{
 	float: left;
@@ -222,9 +231,7 @@
 
 /*logo 搜索框 轮播图*/
 .header{
-	position: relative;
-	height: 602px;
-	background-color: aqua;
+	height: 633px;
 }
 .header .header-nav{
 	width: 100%;
@@ -241,6 +248,9 @@
 	width: 160px;
 	height: 100px;
 }
+.header .search{
+	position: relative;
+}
 .header .search .hot-search{
 	float: left;
 	border:2px solid #ff9900;
@@ -250,6 +260,7 @@
 	box-sizing: border-box;
 	margin-top: 30px;
 	margin-left: 10px;
+	position: relative;
 }
 .header .search .hot-search i{
 	color: #ccccd0;
@@ -262,7 +273,9 @@
 	font-size: 14px;
 }
 .header .search .click-search{
-	float: left;
+	position: absolute;
+	top: -32px;
+	left: 418px;
 	width: 118px;
 	height: 42px;
 	margin-top: 30px;
@@ -278,7 +291,7 @@
 .header .search .search-list{
 	position: absolute;
 	top: 70px;
-	left: 555px;
+	left: 360px;
 }
 .header .search .search-list .search-item{
 	padding-top: 3px;
@@ -297,9 +310,13 @@
 .header .search .search-list .search-item8 a{
 	border-right:none;
 }
+.header .catalogue{
+	position: relative;
+	height: 149px;
+}
 .header .catalogue .catalogue-nav{
 	position: absolute;
-	left: 191px;
+	left: 0px;
 	top: 109px;
 	width: 191px;
 	height: 40px;
@@ -319,11 +336,10 @@
 }
 .header .catalogue .catalogue-item{
 	position: absolute;
-	left: 382px;
+	left: 191px;
 	top: 109px;
 	width: 828px;
 	height: 40px;
-	/*background-color: gray;*/
 }
 .header .catalogue .catalogue-item .list-item{
 	float: left;
@@ -343,8 +359,8 @@
 .header .catalogue .catalogue-end{
 	position: absolute;
 	top: 109px;
-	left: 1210px;
-	width: 171px;
+	left: 1019px;
+	width: 167px;
 	height: 40px;
 	background-color: pink;
 	box-sizing: border-box;
@@ -353,6 +369,168 @@
 	width: 100%;
 	height: 40px;
 }
+.header .cart{
+	width: 1185px;
+	height: 484px;
+	position: relative;
+}
+.header .cart .cart-nav{
+	float: left;
+	width: 191px;
+	height: 484px;
+	background-color: #252221;
+}
+.header .cart .cart-nav .cart-nav-item{
+	padding: 10px 0 0 10px;
+	color: #fff;
+}
+.header .cart .cart-nav .cart-nav-item em{
+	display: inline-block;
+	vertical-align:middle;
+	width: 1px;
+	height: 13px;
+	background-color: #6d6b6a;
+	margin:0 8px;
+}
+.header .cart .cart-nav .cart-nav-item a{
+	color:#fff;
+	font-size: 13px;
+}
+.header .cart .cart-item{
+	float: left;
+	width: 823px;
+	height: 484px;
+	position: relative;
+}
+.header .cart .cart-item img{
+	position: absolute;
+	width: 823px;
+	height: 484px;
+}
+.header .cart .cart-item .array{
+	display: inline-block;
+	height: 60px;
+	width: 30px;
+	opacity: 0.8;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 999;
+	text-align: center;
+}
+.header .cart .cart-item .array i{
+	color: #fff;
+	font-size: 24px;
+	line-height: 60px;
+}
+.header .cart .cart-item .left-array{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -30px;
+}
+.header .cart .cart-item .right-array{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -30px;
+}
+.header .cart .cart-item .btn{
+	position: absolute;
+	bottom: 140px;
+	left: 50%;
+	margin-left: -44px;
+}
+.header .cart .cart-item .btn-list{
+	float: left;
+	width: 17px;
+	height: 17px;
+	background-color: #c6cae4;
+	border-radius: 50%;
+	margin-left: 5px;
+	opacity: 0.9;
+}
+.header .cart .cart-item .btn .active{
+	background-color: #d09243;
+}
+.header .cart .cart-item .follow{
+	bottom:8px;
+	left: 11px;
+	position: absolute;
+	width: 807px;
+	height: 126px;
+}
+.header .cart .cart-item .follow .flist{
+	float: left;
+	width: 198px;
+	height: 126px;
+	background-color: #fafbfc;
+	margin-right: 3px;
+	position: relative;
+}
+.header .cart .cart-item .follow .flist img{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 80px;
+	height: 80px;
+}
+.header .cart .cart-item .follow .flist .name{
+	padding: 10px 20px 0 10px;
+	font-size: 16px;
+	color: #eb442a;
+	font-weight: 900;
+}
+.header .cart .cart-item .follow .flist .name2{
+	color: #973bed;
+}
+.header .cart .cart-item .follow .flist .name3{
+	color: #47b074;
+}
+.header .cart .cart-item .follow .flist .name4{
+	color: #2883ed;
+}
+.header .cart .cart-item .follow .flist .desc{
+	padding: 5px 0 0 10px;
+	font-size: 13px;
+	color: #676869;
+}
+.header .cart .cart-end{
+	float: left;
+	width: 171px;
+	height: 484px;
+	background-color: #ffffff;
+}
+.header .cart .cart-end .cart-end-nav{
+	width: 171px;
+	height: 160px;
+	background-color: #f67;
+}
+.header .cart .cart-end .cart-end-item{
+	width: 171px;
+	height: 162px;
+	background-color: green;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+.header .cart .cart-end .cart-end-list{
+	width: 171px;
+	height: 160px;
+	background-color: purple;
+}
+.header .cart-left{
+	position: absolute;
+	left: -195px;
+	bottom: -1px;
+	width: 195px;
+	height: 486px;
+}
+.header .cart-right{
+	position: absolute;
+	right:-175px;
+	bottom: 0px;
+	width: 175px;
+	height: 484px;
+}
+
 
 .main{
 	height: 924px;
