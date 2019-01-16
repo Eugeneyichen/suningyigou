@@ -133,7 +133,6 @@
 	height: 183px;
 	margin-top: 180px;
 	text-align: center;
-	cursor: pointer;
 }
 .top .left .cart .user{
 	width: 36px;
@@ -167,21 +166,23 @@
 	top: 32px;
 	right: 12px;
 	width: 15px;
-	height: 15px;
+	height: 15px;	
+}
+.top .left .cart .buy-cart a{
 	color: #fff;
 	font-size: 12px;
 }
 .top .left .cart .num{
 	display: inline-block;
 	position: absolute;
-	top: 89px;
+	top: 95px;
 	right: 9px;
 	width: 20px;
 	height: 16px;
 	background-color: #dd0000;
+	border-radius: 30%;
 	font-size: 12px;
 	color: #fff;
-	border-radius: 30%;
 }
 .top .left .manage{
 	width: 100%;
@@ -502,19 +503,125 @@
 .header .cart .cart-end .cart-end-nav{
 	width: 171px;
 	height: 160px;
-	background-color: #f67;
+	background-color: #ffffff;
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 1px solid #f2f2f2;
+}
+.header .cart .cart-end .cart-end-nav a img{
+	padding-top: 15px;
+	width: 38px;
+	height: 38px;
+}
+.header .cart .cart-end .cart-end-nav a .desc{
+	padding-top: 15px;
+	font-size: 11px;
+	color: #333333;
+}
+.header .cart .cart-end .cart-end-nav a .fk{
+	display: inline-block;
+	line-height: 22px;
+	width: 70px;
+	height: 22px;
+	margin-top: 5px;
+	margin-left: 3px;
+}
+.header .cart .cart-end .cart-end-nav a .new{
+	border:1px solid #ffaf14;
+	color: #ffaf14;
+	font-size: 12px;
+}
+.header .cart .cart-end .cart-end-nav a .super{
+	border:1px solid #885126;
+	background-color: #120300;
+	color: #ffc491;
+	font-size: 13px;
+}
+.header .cart .cart-end .cart-end-nav a .lj{
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	color: #ff8031;
+	background-color: #ffe5dd;
+	border-radius: 20%;
+	font-size: 10px;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-left: 3px;
+}
+.header .cart .cart-end .cart-end-nav a .cloud i{
+	font-size: 12px;
+	color: #49ceec;
+}
+.header .cart .cart-end .cart-end-nav a .ticket i{
+	font-size: 12px;
 }
 .header .cart .cart-end .cart-end-item{
 	width: 171px;
 	height: 162px;
-	background-color: green;
-	border-top: 1px solid #f2f2f2;
-	border-bottom: 1px solid #f2f2f2;
+	background-color: #fff;
+}
+.header .cart .cart-end .cart-end-item .cart-end-item-list{
+	width: 145px;
+	height: 35px;
+	font-size: 12px;
+	margin-left: 10px;
+	line-height: 20px;
+	padding-top: 10px;
+}
+.header .cart .cart-end .cart-end-item .cart-end-item-list a p{
+	color: #333333;
+}
+.header .cart .cart-end .cart-end-item .cart-end-item-list p span{
+	color:#ff7c62;
 }
 .header .cart .cart-end .cart-end-list{
 	width: 171px;
 	height: 160px;
-	background-color: purple;
+}
+.header .cart .cart-end .cart-end-list .hot-channel{
+	height: 160px;
+}
+.header .cart .cart-end .cart-end-list .hot-channel .hot-channel-item{
+	float: left;
+	position: relative;
+	width: 57px;
+	height: 80px;
+	padding-top: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.header .cart .cart-end .cart-end-list .hot-channel .hot-channel-item a{
+	font-size: 11px;
+	color: #333333
+}
+.header .cart-end-list .hot-channel .hot-channel-item a i{
+	display: block;
+	font-size: 22px;
+	margin-bottom: 7px;
+	color: #ff9900;
+}
+.header .cart-end-list .right-line:after{
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 57px;
+	content: "";
+	width: 1px;
+	height: 80px;
+	background: #bbb;
+	opacity: 0.2;
+}
+.header .cart-end-list .top-line:before{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 8px;
+	content: "";
+	width: 65px;
+	height: 1px;
+	background: #bbb;
+	opacity: 0.2;
 }
 .header .cart-left{
 	position: absolute;
@@ -531,11 +638,66 @@
 	height: 484px;
 }
 
-
+/*闪购和轮播图下*/
 .main{
 	height: 924px;
-	background-color: yellow;
+	background-color: #fff;
+	position: relative;
 }
+.main .main-img img{
+	width: 100%;
+	height: 600px;
+}
+.main .col1{
+	width: 100%;
+	margin-top: -4px;
+	position: relative;
+	top: -440px;
+	box-sizing: border-box;
+}
+.main .col1 .col1-list{
+	float: left;
+	width: 230px;
+	height: 210px;
+	margin-right: 9.7px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.main .col1 .col1-list:nth-child(5){
+	margin-right: 0;
+}
+.main .col1 .col1-list:nth-child(10){
+	margin-right: 0;
+}
+.main .col1 .col1-list img{
+	width: 120px;
+	height: 120px;
+	z-index: 999;
+}
+.main .col1 .col1-list .desc{
+	padding-top: 10px;
+	font-size: 18px;
+	color: #fff;
+}
+.main .col1 .col1-list .desc2{
+	padding-top: 16px;
+}
+.main .col1 .col1-list .price{
+	font-size: 15px;
+	color: #ea0012;
+	padding-top: 10px;
+}
+.main .product{
+	width: 100%;
+	height: 300px;
+	background-color: aqua;
+	margin-top: 20px;
+}
+
+
+
+
 .home{
 	height: 2000px;
 	background-color: green;
