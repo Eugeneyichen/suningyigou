@@ -641,7 +641,7 @@
 /*闪购和轮播图下*/
 .main{
 	height: 924px;
-	background-color: #fff;
+	background-color: #f2f2f2;
 	position: relative;
 }
 .main .main-img img{
@@ -691,10 +691,151 @@
 .main .product{
 	width: 100%;
 	height: 300px;
-	background-color: aqua;
+	/*background-color: aqua;*/
 	margin-top: 20px;
 }
-
+.main .product .product-nav{
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	position: relative;
+	border-bottom: 1px solid #e7e7e7;
+}
+.main .product .product-nav .desc{
+	position: absolute;
+	height: 100%;
+	width: 270px;
+}
+.main .product .product-nav .desc img{
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	width: 76px;
+	height: 20px;
+}
+.main .product .product-nav .desc .xc{
+	position: absolute;
+	left: 116px;
+	top: 17px;
+	font-size: 12px;
+	color: #333333;
+}
+.main .product .product-nav .desc .timer-box{
+	position: absolute;
+	left: 175px;
+	top: 15px;
+}
+.main .product .product-nav .desc .timer-box .timer-num{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #333333;
+	color: #fff;	
+}
+.main .product .product-nav .desc .timer-box .timer-list{
+	float: left;
+	margin-right: 5px;
+}
+.main .product .product-nav .desc-list{
+	position: absolute;
+	top: 0;
+	left: 320px;
+	height: 100%;
+	width: 620px;
+	overflow: hidden;
+}
+.main .product .product-nav .desc-list ul{
+	height: 24px;
+	overflow: hidden;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 13px;
+}
+.main .product .product-nav .desc-list .shangou{
+	float: left;
+	margin-right: 70px;
+	font-size: 14px;
+	color: #333333;
+	line-height: 24px;
+}
+.main .product .product-nav .desc-list .active{
+	background-color: #ff8a68;
+	width: 135px;
+	height: 24px;
+	border-radius: 20%;
+}
+.main .product .product-nav span{
+	display: inline-block;
+	/*width: 100px;*/
+	height: 100%;
+	position: absolute;
+	right: 10px;
+}
+.main .product .product-nav span a{
+	color: #999999;
+	font-size: 15px;
+	line-height: 50px;
+}
+.main .product .product-nav span a i{
+	font-size: 17px;
+	vertical-align: -1px;
+}
+.main .product .product-list{
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+.main .product .product-list .list-left{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 990px;
+	height: 100%;
+}
+.main .product .product-list .list-left .left-list{
+	float: left;
+	width: 198px;
+	height: 250px;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding-left: 15px;
+}
+.main .product .product-list .list-left .left-list img{
+	width: 170px;
+	height: 170px;
+}
+.main .product .product-list .list-left .left-list a .name{
+	font-size: 10px;
+	color: #333333;
+}
+.main .product .product-list .list-left .left-list a .price{
+	font-size: 14px;
+	color: #ff6600;
+	font-weight: 700;
+	padding-top: 10px;
+}
+.main .product .product-list .list-left .left-list a .price del{
+	font-size: 12px;
+	color: #999999;
+	font-weight: 100;
+}
+.main .product .product-list .list-left .left-list{
+	border-right: 1px solid #e7e7e7;
+}
+.main .product .product-list .list-right{
+	position: absolute;
+	left: 990px;
+	top: 0;
+	width: 203px;
+	height: 100%;
+	background-color: #fff;
+}
+.main .product .product-list .list-right img{
+	padding: 10px 16.5px;
+	width: 170px;
+	height: 230px;
+}
 
 
 
