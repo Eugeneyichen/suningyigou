@@ -15,9 +15,6 @@
 </head>
 <body>
 	<section class="top clearfix">
-		<div class="top-image">
-			<img src="image/top.jpg" alt="">
-		</div>
 		<div class="container">
 			<div class="topL ">
 				<ul>
@@ -28,26 +25,39 @@
 				</ul>
 			</div>
 			<div class="topR">
-				<ul>
-					<li class="topR-nav"><a href="javascript:;">请登录</a></li>
-					<li class="topR-nav zhuce"><a href="javascript:;">注册有礼</a></li>
-					<li class="topR-nav"><a href="javascript:;">我的订单</a><i class="iconfont">&#xe61a;</i></i></li>
-					<li class="topR-nav"><a href="javascript:;">我的易购</a><i class="iconfont">&#xe61a;</i></li>
-					<li class="topR-nav"><a href="javascript:;">苏宁会员</a></li>
-				</ul>
-				<div class="topR-cart">
-					<a href="javascript:;">
-						<i class="iconfont ">&#xe637;</i>
-						<span>购物车 0</span>
-					</a>
-					<i class="iconfont">&#xe61a;</i>
+				<div class="topR-frist">
+					<ul>
+						<li class="topR-nav"><a href="javascript:;">请登录</a></li>
+						<li class="topR-nav zhuce"><a href="javascript:;">注册有礼</a></li>
+						<li class="topR-nav"><a href="javascript:;">我的订单</a><i class="iconfont">&#xe61a;</i></i></li>
+						<li class="topR-nav"><a href="javascript:;">我的易购</a><i class="iconfont">&#xe61a;</i></li>
+						<li class="topR-nav"><a href="javascript:;">苏宁会员</a></li>
+					</ul>
 				</div>
-				<ul>
-					<li class="topR-item"><a href="javascript:;">易付宝</a></li>
-					<li class="topR-item"><a href="javascript:;">企业采购</a></li>
-					<li class="topR-item"><a href="javascript:;">手机苏宁</a><i class="iconfont">&#xe61a;</i></li>
-				</ul>
-				<span class="on"><i class="iconfont">&#xe640;</i></span>
+				<div class="cart">
+					<div class="topR-cart">
+						<a href="javascript:;">
+							<i class="iconfont ">&#xe637;</i>
+							<span>购物车 0</span>
+						</a>
+						<i class="iconfont" id="link">&#xe61a;</i>
+					</div>
+					<div class="cart-content">
+						<img src="image/cart.png" alt="">
+						<div class="cart-wenzi">
+							<p class="cart-frist">不能让您的购物车空着，快去抢购吧</p>
+							<p class="cart-second">如果您已经添加过宝贝，那就赶紧登陆查看吧</p>
+							<a href="javascript:;"><span class="cart-log">登录</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="topR-end">
+					<ul>
+						<li class="topR-item"><a href="javascript:;">易付宝</a></li>
+						<li class="topR-item"><a href="javascript:;">企业采购</a></li>
+						<li class="topR-item"><a href="javascript:;">手机苏宁</a><i class="iconfont">&#xe61a;</i></li>
+					</ul>
+				</div>
 				<img src="image/left.png" alt="">
 			</div>
 			<div class="left">
@@ -78,33 +88,96 @@
 			</div>
 		</div>
 	</section>
+
 	<header class="header clearfix">
-		 <div class="header-nav">
-			<div class="container">
-				<div class="logo">
-					<img src="image/logo.png" alt="" class="logo1">
-					<img src="image/logo.gif" alt="" class="logo2">
-				</div>
-				<div class="search">
-					<div class="hot-search">
-						<i class="iconfont">&#xe63d;</i>
-						<span class="txt"> 单灶具299元抢</span>
-						<div class="click-search"><a href="javascript:;">搜 索</a></div>
-					</div>
-					<div class="search-list">
-						<ul >
-							<li class="search-item"><a href="javascript:;">空气净化器</a></li>
-							<li class="search-item search-item2"><a href="javascript:;">康佳超品钜惠</a></li>
-							<li class="search-item"><a href="javascript:;">手机</a></li>
-							<li class="search-item search-item2"><a href="javascript:;">海信电视</a></li>
-							<li class="search-item search-item2"><a href="javascript:;">冰洗每千减百</a></li>
-							<li class="search-item"><a href="javascript:;">电视</a></li>
-							<li class="search-item"><a href="javascript:;">洗衣机</a></li>
-							<li class="search-item search-item8"><a href="javascript:;">空调</a></li>
-						</ul>
-					</div>
-				</div>
+		<div class="container">
+			<div class="header-nav">
 				<div class="catalogue">
+					<div class="logo">
+						<a href="javascript:;"><img src="image/logo.png" alt="" class="logo1"></a>
+						<a href="javascript:;"><img src="image/logo.gif" alt="" class="logo2"></a>
+					</div>
+					<div class="header-sec">
+						<div class="header-search"><i class="iconfont">&#xe616;</i></div>
+						<input type="text" name="" class="sec-text">
+						<div class="sec-a">
+							<p class="sec-i"><a href="javascript:;">搜索</a></p>
+						</div>
+						<div class="sec-box">
+							<a href="#" class="sec-box-a">生活家电最高领卷减150元</a>
+						</div>
+						<div class="sec-ul">
+							<ul>
+								<li class="ul-list uc">
+									<a href="javascript:;">除湿机</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								</li>
+								<li class="ul-list">
+									<a href="javascript:;">美的为爱狂欢</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								</li>
+								<li class="ul-list">
+									<a href="javascript:;">大米</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								</li>
+								<li class="ul-list">
+									<a href="javascript:;">手机</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								</li>
+								<li class="ul-list">
+									<a href="javascript:;">奶粉</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								</li>
+								<li class="ul-list">
+									<a href="javascript:;">电视</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								</li>
+								<li class="ul-list">
+									<a href="javascript:;">洗衣机</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								</li>
+								<li class="ul-list">
+									<a href="javascript:;">ipad</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								</li>
+								<li class="ul-list">
+									<a href="javascript:;">三只松鼠</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								</li>
+								<li class="ul-list">
+									<a href="javascript:;">空调</a></li>
+							</ul>
+						</div>
+						<div class="text-list">
+							<div class="text-left">
+								<div class="lately">
+									<p class="lately-name">最近搜索</p>
+								</div>
+								<img src="image/lately.png" alt="">
+								<p class="lately-desc">您还没有探索过这里</p>
+							</div>
+							<div class="text-right">
+								<p class="text-hot">正在热搜中</p>
+								<ul>
+									<li class="text-hot-list"><a href="javascript:;">iphone</a></li>
+									<li class="text-hot-list text-hot-list-active"><a href="javascript:;">热水器</a></li>
+									<li class="text-hot-list"><a href="javascript:;">小米电视</a></li>
+									<li class="text-hot-list text-hot-list-active"><a href="javascript:;">洗衣机</a></li>
+									<li class="text-hot-list text-hot-list-active"><a href="javascript:;">取暖器</a></li>
+									<li class="text-hot-list"><a href="javascript:;">笔记本</a></li>
+									<li class="text-hot-list text-hot-list-active"><a href="javascript:;">ipad</a></li>
+									<li class="text-hot-list"><a href="javascript:;">电饭煲</a></li>
+									<li class="text-hot-list text-hot-list-active"><a href="javascript:;">手机</a></li>
+									<li class="text-hot-list"><a href="javascript:;">变频空调</a></li>
+									<li class="text-hot-list"><a href="javascript:;">冰箱</a></li>
+									<li class="text-hot-list text-hot-list-active"><a href="javascript:;">羽绒服</a></li>
+									<li class="text-hot-list"><a href="javascript:;">奶粉</a></li>
+									<li class="text-hot-list"><a href="javascript:;">客厅灯</a></li>
+									<li class="text-hot-list"><a href="javascript:;">油烟机</a></li>
+									<li class="text-hot-list"><a href="javascript:;">纸尿裤</a></li>
+									<li class="text-hot-list text-hot-list-active"><a href="javascript:;">苏宁生鲜</a></li>
+									<li class="text-hot-list"><a href="javascript:;">儿童手表</a></li>
+									<li class="text-hot-list"><a href="javascript:;">佳能</a></li>
+									<li class="text-hot-list text-hot-list-active"><a href="javascript:;">电视</a></li>
+									<li class="text-hot-list"><a href="javascript:;">牛奶</a></li>
+									<li class="text-hot-list text-hot-list-active"><a href="javascript:;">小米8青春版</a></li>
+									<li class="text-hot-list"><a href="javascript:;">华为mate20</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
 					<div class="catalogue-nav">
 						<a href="javascript:;">
 							<i class="iconfont">&#xe6b8;</i>
@@ -132,38 +205,144 @@
 				<div class="cart">
 					<div class="cart-nav">
 						<ul>
-							<li class="cart-nav-item"><a href="javascript:;">手机</a><em></em><a href="javascript:;">运营商</a><em></em><a href="javascript:;">智能数码</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">电视</a><em></em><a href="javascript:;">冰箱</a><em></em><a href="javascript:;">空调</a><em></em><a href="javascript:;">洗衣机</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">厨卫大电</a><em></em><a href="javascript:;">生活大电</a><em></em><a href="javascript:;">厨具</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">电脑</a><em></em><a href="javascript:;">办公</a><em></em><a href="javascript:;">DIY</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">家居</a><em></em><a href="javascript:;">家具</a><em></em><a href="javascript:;">家装</a><em></em><a href="javascript:;">家纺</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">食品</a><em></em><a href="javascript:;">酒水</a><em></em><a href="javascript:;">生鲜</a><em></em><a href="javascript:;">特产</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">美妆</a><em></em><a href="javascript:;">个护</a><em></em><a href="javascript:;">清洁</a><em></em><a href="javascript:;">宠物</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">母婴</a><em></em><a href="javascript:;">玩具</a><em></em><a href="javascript:;">车床</a><em></em><a href="javascript:;">童装</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">运动</a><em></em><a href="javascript:;">户外</a><em></em><a href="javascript:;">足球</a><em></em><a href="javascript:;">跑步机</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">男装</a><em></em><a href="javascript:;">女装</a><em></em><a href="javascript:;">内衣</a><em></em><a href="javascript:;">鞋靴</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">箱包</a><em></em><a href="javascript:;">钟表</a><em></em><a href="javascript:;">珠宝</a><em></em><a href="javascript:;">艺术</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">汽摩</a><em></em><a href="javascript:;">二手车</a><em></em><a href="javascript:;">汽车用品</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">图书</a><em></em><a href="javascript:;">童书</a><em></em><a href="javascript:;">教辅教材</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">医药健康</a><em></em><a href="javascript:;">计生情趣</a></li>
-							<li class="cart-nav-item"><a href="javascript:;">理财</a><em></em><a href="javascript:;">分期</a><em></em><a href="javascript:;">保险</a><em></em><a href="javascript:;">房产</a></li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">手机</a>
+								<em></em>
+								<a href="javascript:;">运营商</a>
+								<em></em>
+								<a href="javascript:;">智能数码</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">电视</a>
+								<em></em>
+								<a href="javascript:;">冰箱</a>
+								<em></em>
+								<a href="javascript:;">空调</a>
+								<em></em>
+								<a href="javascript:;">洗衣机</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">厨卫大电</a>
+								<em></em>
+								<a href="javascript:;">生活大电</a>
+								<em></em>
+								<a href="javascript:;">厨具</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">电脑办公</a>
+								<em></em>
+								<a href="javascript:;">相机</a>
+								<em></em>
+								<a href="javascript:;">DIY</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">家居</a>
+								<em></em>
+								<a href="javascript:;">家具</a>
+								<em></em>
+								<a href="javascript:;">家装</a>
+								<em></em>
+								<a href="javascript:;">家纺</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">食品</a>
+								<em></em>
+								<a href="javascript:;">酒水</a>
+								<em></em>
+								<a href="javascript:;">生鲜</a>
+								<em></em>
+								<a href="javascript:;">特产</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">美妆</a>
+								<em></em>
+								<a href="javascript:;">个护</a>
+								<em></em>
+								<a href="javascript:;">清洁</a>
+								<em></em>
+								<a href="javascript:;">宠物</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">母婴</a>
+								<em></em>
+								<a href="javascript:;">玩具</a>
+								<em></em>
+								<a href="javascript:;">车床</a>
+								<em></em>
+								<a href="javascript:;">童装</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">运动</a>
+								<em></em>
+								<a href="javascript:;">户外</a>
+								<em></em>
+								<a href="javascript:;">足球</a>
+								<em></em>
+								<a href="javascript:;">跑步机</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">男装</a>
+								<em></em>
+								<a href="javascript:;">女装</a>
+								<em></em>
+								<a href="javascript:;">内衣</a>
+								<em></em>
+								<a href="javascript:;">鞋靴</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">箱包</a>
+								<em></em>
+								<a href="javascript:;">钟表</a>
+								<em></em>
+								<a href="javascript:;">珠宝</a>
+								<em></em>
+								<a href="javascript:;">艺术</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">汽摩</a>
+								<em></em>
+								<a href="javascript:;">二手车</a>
+								<em></em>
+								<a href="javascript:;">汽车用品</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">图书</a>
+								<em></em>
+								<a href="javascript:;">童书</a>
+								<em></em>
+								<a href="javascript:;">教辅教材</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">医药健康</a>
+								<em></em>
+								<a href="javascript:;">计生情趣</a>
+							</li>
+							<li class="cart-nav-item">
+								<a href="javascript:;">理财</a>
+								<em></em>
+								<a href="javascript:;">分期</a>
+								<em></em>
+								<a href="javascript:;">保险</a>
+								<em></em>
+								<a href="javascript:;">房产</a>
+							</li>
 						</ul>
 					</div>
 					<div class="cart-item">
-						<img src="image/cart1.jpg" alt="">
-						<img src="image/cart2.jpg" alt="">
-						<img src="image/cart3.jpg" alt="">
-						<img src="image/cart4.jpg" alt="">
+						<ul>
+							<li class="cart-item-list"><a href="javascript:;"><img src="image/cart1.jpg" alt=""></a></li>
+							<li class="cart-item-list"><a href="javascript:;"><img src="image/cart2.jpg" alt=""></a></li>
+							<li class="cart-item-list"><a href="javascript:;"><img src="image/cart3.jpg" alt=""></a></li>
+							<li class="cart-item-list"><a href="javascript:;"><img src="image/cart4.jpg" alt=""></a></li>
+						</ul>
 						<span class="left-array array"><i class="iconfont">&#xe667;</i></span>
 						<span class="right-array array"><i class="iconfont">&#xe601;</i></span>
-						<div class="btn">
-							<ul>
-								<li class="btn-list "></li>
-								<li class="btn-list"></li>
-								<li class="btn-list active"></li>
-								<li class="btn-list"></li>
-							</ul>
-						</div>
+						<ul class="btn">
+							<li class="btn-list active"></li>
+							<li class="btn-list"></li>
+							<li class="btn-list"></li>
+							<li class="btn-list"></li>
+						</ul>
 						<div class="follow">
 							<ul>
 								<li class="flist">
@@ -210,9 +389,9 @@
 						</div>
 						<div class="cart-end-item">
 							<ul>
-								<li class="cart-end-item-list"><a href="javascript:;"><p><span>[知识]</span> 华为手环一款可以长袍的手环</p></a></li>
-								<li class="cart-end-item-list"><a href="javascript:;"><p><span>[知识]</span> 华为手环一款可以长袍的手环</p></a></li>
-								<li class="cart-end-item-list"><a href="javascript:;"><p><span>[知识]</span> 华为手环一款可以长袍的手环</p></a></li>
+								<li class="cart-end-item-list"><a href="javascript:;"><p><span>[知识]</span>&nbsp;华为手环一款可以长跑的手环</p></a></li>
+								<li class="cart-end-item-list"><a href="javascript:;"><p><span>[知识]</span>&nbsp;轻松美观毫不费力的电动订书机</p></a></li>
+								<li class="cart-end-item-list"><a href="javascript:;"><p><span>[知识]</span>&nbsp;烘焙入门设备选购指南一一电烤箱</p></a></li>
 							</ul>
 						</div>
 						<div class="cart-end-list">
@@ -232,6 +411,7 @@
 			</div>
 		</div> 
 	</header>
+
 	<section class="main clearfix">
 		<div class="container">
 			<div class="main-img">
@@ -343,34 +523,39 @@
 									<img src="image/xsqg2.jpg" alt="">
 									<p class="name">特步男运动鞋</p>
 									<p class="price">￥129<del>￥279.00</del></p>
-								</a>
-							</li>
-							<li class="left-list left-line">
-								<a href="javascript:;">
-									<img src="image/xsqg2.jpg" alt="">
-									<p class="name">特步男运动鞋</p>
-									<p class="price">￥129<del>￥279.00</del></p>
+									<span class="schedule"></span><span class="schedule-nav">已抢0%</span>
 								</a>
 							</li>
 							<li class="left-list">
 								<a href="javascript:;">
-									<img src="image/xsqg2.jpg" alt="">
-									<p class="name">特步男运动鞋</p>
-									<p class="price">￥129 <del>￥279.00</del></p>
+									<img src="image/xsqg3.jpg" alt="">
+									<p class="name">南极人(NanJiren)家纺</p>
+									<p class="price">￥39.9<del>￥79.00</del></p>
+									<span class="schedule"></span><span class="schedule-nav">已抢0%</span>
 								</a>
 							</li>
 							<li class="left-list">
 								<a href="javascript:;">
-									<img src="image/xsqg2.jpg" alt="">
-									<p class="name">特步男运动鞋</p>
-									<p class="price">￥129<del>￥279.00</del></p>
+									<img src="image/xsqg4.jpg" alt="">
+									<p class="name">3515强人男鞋2019新款</p>
+									<p class="price">￥129<del>￥899.00</del></p>
+									<span class="schedule"></span><span class="schedule-nav">已抢0%</span>
 								</a>
 							</li>
 							<li class="left-list">
 								<a href="javascript:;">
-									<img src="image/xsqg2.jpg" alt="">
-									<p class="name">特步男运动鞋</p>
-									<p class="price">￥129<del>￥279.00</del></p>
+									<img src="image/xsqg5.jpg" alt="">
+									<p class="name">嘉实多(Castrol)极护</p>
+									<p class="price">￥255<del>￥498.00</del></p>
+									<span class="schedule"></span><span class="schedule-nav">已抢0%</span>
+								</a>
+							</li>
+							<li class="left-list">
+								<a href="javascript:;">
+									<img src="image/xsqg6.jpg" alt="">
+									<p class="name">BINKADA宾卡达金属手链表</p>
+									<p class="price">￥148<del>￥1298.00</del></p>
+									<span class="schedule"></span><span class="schedule-nav">已抢0%</span>
 								</a>
 							</li>
 						</ul>
@@ -378,12 +563,964 @@
 					<div class="list-right">
 						<img src="image/xsqg1.jpg" alt="">
 					</div>
+					<span class="left-btn btn"><i class="iconfont">&#xe667;</i></span>
+					<span class="right-btn btn"><i class="iconfont">&#xe601;</i></span>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="home "></section>
-	<footer class="footer "></footer>
-	<section class="end "></section>
+
+	<section class="home clearfix">
+		<div class="container">
+			<div class="more">
+				<ul class="more-ul">
+					<li class="more-list">
+						<div class="more-title">
+							<div class="little-cube"></div>
+							<span class="head">必抢清单</span>
+							<a href="javascript:;">更多 <i class="iconfont">&#xe63e;</i></a>
+						</div>
+						<span class="array left-array"><i class="iconfont">&#xe667;</i></span>
+						<span class="array right-array"><i class="iconfont">&#xe601;</i></span>
+						<ul>
+							<li>
+								<div class="more-product">
+									<a href="javascript:;">
+										<img src="image/home1.jpg" alt="" class="img1">
+										<p class="product-name">排除高级Vlog，试试这些装备</p>
+										<p class="product-explain">Vlog最近几年来非常火爆的社交方式，通过视频影像记录自己的生活方式</p>
+									</a>
+									<ul class="product-ul">
+										<li class="product-list"><a href="javascript:;"><img src="image/home2.jpg" alt=""></a></li>
+										<li class="product-list"><a href="javascript:;"><img src="image/home3.jpg" alt=""></a></li>
+										<li class="product-list"><a href="javascript:;"><img src="image/home4.jpg" alt=""></a></li>
+									</ul>
+								</div>
+							</li>
+							<li></li>
+							<li></li>
+						</ul>
+						<div class="bottom-btn">
+							<ul>
+								<li class="btn-list active"><a href="javascript:;"></a></li>
+								<li class="btn-list"><a href="javascript:;"></a></li>
+								<li class="btn-list"><a href="javascript:;"></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="more-list">
+						<div class="more-title">
+							<div class="little-cube little-cube2"></div>
+							<span class="head head2">生活部落</span>
+							<a href="javascript:;">更多 <i class="iconfont">&#xe63e;</i></a>
+						</div>
+						<div class="shenghuo">
+							<ul>
+								<li class="shenghuo-list">
+									<a href="javascript:;">
+										<div class="hint">
+											<div class="hint-name"><i class="iconfont">&#xe61a;</i>保鲜卫士</div>
+										</div>
+										<p class="hint-zhushi">生活原汁原味</p>
+										<div class="xiaotu">
+											<ul>
+												<li class="xiaotu-img">
+													<img src="image/shenghuo1.jpg" alt="">
+												</li>
+												<li class="xiaotu-img">
+													<img src="image/shenghuo2.jpg" alt="">
+												</li>
+											</ul>
+										</div>
+									</a>
+								</li>
+								<li class="shenghuo-list">
+									<a href="javascript:;">
+										<div class="hint">
+											<div class="hint-name"><i class="iconfont">&#xe61a;</i>怕冷星人</div>
+										</div>
+										<p class="hint-zhushi">冷热生活随心</p>
+										<div class="xiaotu">
+											<ul>
+												<li class="xiaotu-img">
+													<img src="image/shenghuo3.jpg" alt="">
+												</li>
+												<li class="xiaotu-img">
+													<img src="image/shenghuo4.jpg" alt="">
+												</li>
+											</ul>
+										</div>
+									</a>
+								</li>
+								<li class="shenghuo-list">
+									<a href="javascript:;">
+										<div class="hint">
+											<div class="hint-name"><i class="iconfont">&#xe61a;</i>视觉体验者</div>
+										</div>
+										<p class="hint-zhushi">试听极致享受</p>
+										<div class="xiaotu">
+											<ul>
+												<li class="xiaotu-img">
+													<img src="image/shenghuo5.jpg" alt="">
+												</li>
+												<li class="xiaotu-img">
+													<img src="image/shenghuo6.jpg" alt="">
+												</li>
+											</ul>
+										</div>
+									</a>
+								</li>
+								<li class="shenghuo-list">
+									<a href="javascript:;">
+										<div class="hint">
+											<div class="hint-name"><i class="iconfont">&#xe61a;</i>洗衣党</div>
+										</div>
+										<p class="hint-zhushi">解放你的双手</p>
+										<div class="xiaotu">
+											<ul>
+												<li class="xiaotu-img">
+													<img src="image/shenghuo7.jpg" alt="">
+												</li>
+												<li class="xiaotu-img">
+													<img src="image/shenghuo8.jpg" alt="">
+												</li>
+											</ul>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="more-list">
+						<div class="more-title">
+							<div class="little-cube little-cube3"></div>
+							<span class="head head3">排行榜</span>
+							<a href="javascript:;">更多 <i class="iconfont">&#xe63e;</i></a>
+						</div>
+						<div class="rank">
+							<ul>
+								<li class="rank-nav active"><a href="javascript:;">精选</a></li>
+								<li class="rank-nav"><a href="javascript:;">休闲食品</a></li>
+								<li class="rank-nav"><a href="javascript:;">厨房小店</a></li>
+								<li class="rank-nav"><a href="javascript:;">优选空调</a></li>
+							</ul>
+						</div>
+						<div class="rank-item">
+							<ul>
+								<li class="rank-list">
+									<a href="javascript:;">
+										<div class="item-list">
+											<img src="image/rank1.jpg" alt="">
+											<p class="rank-name">雀巢(Nestle) 饼干 巧克力威化 </p>
+											<p class="rank-price">￥25.60</p>
+											<span>休闲小吃销量NO1</span>
+										</div>
+									</a>
+								</li>
+								<li class="rank-list">
+									<a href="javascript:;">
+										<div class="item-list">
+											<img src="image/rank2.jpg" alt="">
+											<p class="rank-name">元宝 大豆油 5L</p>
+											<p class="rank-price">￥29.90</p>
+											<span>米面粮油销量NO1</span>
+										</div>
+									</a>
+								</li>
+								<li class="rank-list">
+									<a href="javascript:;">
+										<div class="item-list">
+											<img src="image/rank3.jpg" alt="">
+											<p class="rank-name">小米电视 4A 青春版L43M5-AD</p>
+											<p class="rank-price">￥25.60</p>
+											<span>生活电器销量NO1</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="more-list">
+						<div class="more-title">
+							<div class="little-cube little-cube4"></div>
+							<span class="head head4">领卷中心</span>
+							<a href="javascript:;">更多 <i class="iconfont">&#xe63e;</i></a>
+						</div>
+						<div class="roll">
+							<ul>
+								<li class="roll-list">
+									<div class="roll-list-left">
+										<img src="image/roll1.jpg" alt="">
+										<div class="roll-content">
+											<p class="content-price"><span>￥</span>90<span class="content-desc">每300用30</span></p>	
+											<span class="content-name">限自营耳机音响商品类</span>
+										</div>
+									</div>
+									<div class="roll-list-right">
+										<div class="right-item">立即领取</div>
+									</div>
+									<div class="dotted"></div>
+								</li>
+								<li class="roll-list">
+									<div class="roll-list-left">
+										<img src="image/roll2.jpg" alt="">
+										<div class="roll-content">
+											<p class="content-price"><span>￥</span>100<span class="content-desc">每199用100</span></p>	
+											<span class="content-name">限自营家纺类部分商品</span>
+										</div>
+									</div>
+									<div class="roll-list-right">
+										<div class="right-item">立即领取</div>
+									</div>
+									<div class="dotted"></div>
+								</li>
+								<li class="roll-list">
+									<div class="roll-list-left">
+										<img src="image/roll3.jpg" alt="">
+										<div class="roll-content">
+											<p class="content-price"><span>￥</span>150<span class="content-desc">每249用150</span></p>	
+											<span class="content-name">限三只松鼠旗舰店部分商品</span>
+										</div>
+									</div>
+									<div class="roll-list-right">
+										<div class="right-item">立即领取</div>
+									</div>
+									<div class="dotted"></div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="more-list">
+						<div class="more-title">
+							<div class="little-cube little-cube5"></div>
+							<span class="head head5">苏宁Outlets</span>
+							<a href="javascript:;">更多 <i class="iconfont">&#xe63e;</i></a>
+						</div>
+						<div class="outlets">
+							<ul>
+								<li class="outlets-list">
+									<a href="javascript:;">
+										<div class="outlets-content">
+											<img src="image/outlets1.jpg" alt="">
+											<p class="outlets-name">斐格</p>
+											<p class="outlets-price">全场1.6折起</p>
+										</div>
+									</a>
+								</li>
+								<li class="outlets-list">
+									<a href="javascript:;">
+										<div class="outlets-content">
+											<img src="image/outlets2.jpg" alt="">
+											<p class="outlets-name">New Blance</p>
+											<p class="outlets-price">全场7.6折起</p>
+										</div>
+									</a>
+								</li>
+								<li class="outlets-list">
+									<a href="javascript:;">
+										<div class="outlets-content">
+											<img src="image/outlets3.jpg" alt="">
+											<p class="outlets-name">adidas neo</p>
+											<p class="outlets-price">全场9折起</p>
+										</div>
+									</a>
+								</li>
+								<li class="outlets-list">
+									<a href="javascript:;">
+										<div class="outlets-content">
+											<img src="image/outlets4.jpg" alt="">
+											<p class="outlets-name">Li Ning</p>
+											<p class="outlets-price">全场7折起</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="more-list">
+						<div class="more-title">
+							<div class="little-cube little-cube6"></div>
+							<span class="head head6">人气好货</span>
+							<a href="javascript:;">更多 <i class="iconfont">&#xe63e;</i></a>
+						</div>
+						<div class="outlets">
+							<ul>
+								<li class="outlets-list">
+									<a href="javascript:;">
+										<div class="outlets-content">
+											<img src="image/outlets5.jpg" alt="">
+											<p class="outlets-name">博世 电动螺丝刀</p>
+											<p class="outlets-price-good">445人都说好</p>
+										</div>
+									</a>
+								</li>
+								<li class="outlets-list">
+									<a href="javascript:;">
+										<div class="outlets-content">
+											<img src="image/outlets6.jpg" alt="">
+											<p class="outlets-name">四季沐歌增压花洒</p>
+											<p class="outlets-price-good">439人都说好</p>
+										</div>
+									</a>
+								</li>
+								<li class="outlets-list">
+									<a href="javascript:;">
+										<div class="outlets-content">
+											<img src="image/outlets7.jpg" alt="">
+											<p class="outlets-name">德国博朗手持式料理机</p>
+											<p class="outlets-price-good">345人都说好</p>
+										</div>
+									</a>
+								</li>
+								<li class="outlets-list">
+									<a href="javascript:;">
+										<div class="outlets-content">
+											<img src="image/outlets8.jpg" alt="">
+											<p class="outlets-name">雅倍小安素奶粉</p>
+											<p class="outlets-price-good">413人都说好</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="most">
+				<div class="most-left">
+					<ul>
+						<li class="most-list">
+							<a href="javascript:;">
+								<div class="most-content">
+									<img src="image/most2.png" alt="" class="bi">
+									<img src="image/most1.png" alt=""class="zx">
+									<div class="most-cube">
+										<p class="most-name">苏宁极物</p>
+										<span></span>
+										<p class="most-desc">苏宁自有品牌</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="most-list">
+							<a href="javascript:;">
+								<div class="most-content">
+									<img src="image/most3.png" alt="" class="bi">
+									<img src="image/most4.png" alt=""class="zx">
+									<div class="most-cube">
+										<p class="most-name">Biu+优品</p>
+										<span></span>
+										<p class="most-desc">最高直降1000元</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="most-list">
+							<a href="javascript:;">
+								<div class="most-content">
+									<img src="image/most5.png" alt="" class="bi">
+									<img src="image/most6.png" alt=""class="zx">
+									<div class="most-cube">
+										<p class="most-name">苏宁国际</p>
+										<span></span>
+										<p class="most-desc">尖货每满199减60</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="most-list">
+							<a href="javascript:;">
+								<div class="most-content">
+									<img src="image/most7.png" alt="" class="bi">
+									<img src="image/most8.png" alt=""class="zx">
+									<div class="most-cube">
+										<p class="most-name">苏宁众筹</p>
+										<span></span>
+										<p class="most-desc">先锋白酒开山之作</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="most-right">
+					<div class="most-on">
+						<div class="on-left">
+							<img src="image/most9.png" alt="">
+							<div class="auto"><i class="iconfont">&#xe64b;</i></div>
+							<p class="on-name">[过年不打烊]自营车厘子</p>
+						</div>
+						<div class="on-right">
+							<ul>
+								<li class="on-list">
+									<img src="image/most9.png" alt="">
+									<div class="on-auto"><i class="iconfont">&#xe64b;</i></div>
+								</li>
+								<li class="on-list">
+									<img src="image/most10.png" alt="">
+									<div class="on-auto"><i class="iconfont">&#xe64b;</i></div>
+								</li>
+								<li class="on-list">
+									<img src="image/most11.png" alt="">
+									<div class="on-auto"><i class="iconfont">&#xe64b;</i></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="most-down">
+						<ul>
+							<li class="most-list">
+								<a href="javascript:;">
+									<div class="most-content">
+										<img src="image/most12.png" alt="" class="bi">
+										<img src="image/most13.png" alt=""class="zx">
+										<div class="most-cube">
+											<p class="most-name">中山特色馆</p>
+											<span></span>
+											<p class="most-desc">淮山馅饼520g</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="most-list">
+								<a href="javascript:;">
+									<div class="most-content">
+										<img src="image/most14.png" alt="" class="bi">
+										<img src="image/most15.png" alt=""class="zx">
+										<div class="most-cube">
+											<p class="most-name">二手优品</p>
+											<span></span>
+											<p class="most-desc">春节不打烊 X直降400</p>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="base">
+				<ul>
+					<li class="base-list"><img src="image/base1.jpg" alt=""></li>
+					<li class="base-list"><img src="image/base2.jpg" alt=""></li>
+					<li class="base-list"><img src="image/base3.jpg" alt=""></li>
+				</ul>
+			</div>
+			<div class="hot">
+				<div class="hot-left">
+					<div class="hot-title">
+						<div class="hot-cube"></div>
+						<span class="hot-head">热门手机 <i class="iconfont">&#xf0030;</i></span>
+						<div class="hot-nav">
+							<ul>
+								<li class="hot-list"><a href="javascript:;">正品手机</a></li>
+								<li class="hot-list"><a href="javascript:;">手机周边</a></li>
+								<li class="hot-list"><a href="javascript:;">手机维修</a></li>
+								<li class="hot-list"><a href="javascript:;">以旧换新</a></li>
+								<li class="hot-list"><a href="javascript:;">号卡宽带</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="hot-item">
+						<div class="item-on">
+							<div class="bgi">
+								<img src="image/phone.png" alt="">
+							</div>
+							<div class="phone">
+								<ul>
+									<li class="phone-list">
+										<a href="javascript:;">
+											<p class="phone-name">红米Note7</p>
+											<p class="phone-desc">新品火热上市</p>
+											<img src="image/phone1.jpg" alt="">
+										</a>
+									</li>
+									<li class="phone-list">
+										<a href="javascript:;">
+											<p class="phone-name">荣耀V20</p>
+											<p class="phone-desc">稀缺新品限量抢</p>
+											<img src="image/phone2.jpg" alt="">
+										</a>
+									</li>
+									<li class="phone-list">
+										<a href="javascript:;">
+											<p class="phone-name">华为P20 6+64G</p>
+											<p class="phone-desc">官网直降400</p>
+											<img src="image/phone3.jpg" alt="">
+										</a>
+									</li>
+									<li class="phone-list">
+										<a href="javascript:;">
+											<p class="phone-name">OPPO R17</p>
+											<p class="phone-desc">12期免息送好礼</p>
+											<img src="image/phone4.jpg" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="item-down">
+							<div class="brand-on">
+								<ul>
+									<li class="brand-list">
+										<a href="javascript:;">
+											<div class="brand-item">
+												<p class="brand-name">Mate 20</p>
+												<p class="brand-desc">6期免息</p>
+											</div>
+											<img src="image/phone5.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-list">
+										<a href="javascript:;">
+											<div class="brand-item">
+												<p class="brand-name">vivo NEX</p>
+												<p class="brand-desc">12期免息</p>
+											</div>
+											<img src="image/phone6.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-list">
+										<a href="javascript:;">
+											<div class="brand-item">
+												<p class="brand-name">三星A8s</p>
+												<p class="brand-desc">6期免息</p>
+											</div>
+											<img src="image/phone7.jpg" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="brand-down">
+								<ul>
+									<li class="down-list"><a href="javascript:;"><img src="image/phone8.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/phone9.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/phone10.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/phone11.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/phone12.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/phone13.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hot-left">
+					<div class="hot-title">
+						<div class="hot-cube"></div>
+						<span class="hot-head">电脑办公 <i class="iconfont">&#xf0030;</i></span>
+						<div class="hot-nav">
+							<ul>
+								<li class="hot-list"><a href="javascript:;">以旧换新</a></li>
+								<li class="hot-list"><a href="javascript:;">电竞馆</a></li>
+								<li class="hot-list"><a href="javascript:;">学生会</a></li>
+								<li class="hot-list"><a href="javascript:;">女神馆</a></li>
+								<li class="hot-list"><a href="javascript:;">企业馆</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="hot-item">
+						<div class="item-on">
+							<div class="bgi">
+								<img src="image/office.png" alt="">
+							</div>
+							<div class="phone">
+								<ul>
+									<li class="phone-list">
+										<a href="javascript:;">
+											<p class="phone-name">电脑过年7天乐</p>
+											<p class="phone-desc">游戏本直降2000元</p>
+											<img src="image/office1.png" alt="">
+										</a>
+									</li>
+									<li class="phone-list">
+										<a href="javascript:;">
+											<p class="phone-name">华为M5青春版</p>
+											<p class="phone-desc">2k 高清屏</p>
+											<img src="image/office2.jpg" alt="">
+										</a>
+									</li>
+									<li class="phone-list">
+										<a href="javascript:;">
+											<p class="phone-name">联想春节不打烊</p>
+											<p class="phone-desc">轻薄本抵制2700</p>
+											<img src="image/office3.jpg" alt="">
+										</a>
+									</li>
+									<li class="phone-list">
+										<a href="javascript:;">
+											<p class="phone-name">Apple产品以旧换新</p>
+											<p class="phone-desc">ipad最低400元</p>
+											<img src="image/office4.png" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="item-down">
+							<div class="brand-on">
+								<ul>
+									<li class="brand-list">
+										<a href="javascript:;">
+											<div class="brand-item">
+												<p class="brand-name">华硕笔记本</p>
+												<p class="brand-desc">i7 3999元</p>
+											</div>
+											<img src="image/office5.jpg" alt="">
+										</a>
+									</li>
+									<li class="brand-list">
+										<a href="javascript:;">
+											<div class="brand-item">
+												<p class="brand-name">小米投影仪</p>
+												<p class="brand-desc">1080P高清</p>
+											</div>
+											<img src="image/office7.png" alt="">
+										</a>
+									</li>
+									<li class="brand-list">
+										<a href="javascript:;">
+											<div class="brand-item">
+												<p class="brand-name">戴尔</p>
+												<p class="brand-desc">4K触控屏</p>
+											</div>
+											<img src="image/office6.jpg" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="brand-down">
+								<ul>
+									<li class="down-list"><a href="javascript:;"><img src="image/office8.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/office9.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/office10.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/office11.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/office12.png" alt=""></a></li>
+									<li class="down-list"><a href="javascript:;"><img src="image/office13.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="like">
+				<span></span>
+				<h5>猜你喜欢</h5>
+			</div>
+			<div class="guess">
+				<ul>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess1.jpg" alt="">
+							<p class="guess-name">湖南湘大王小鱼仔40包混合口味开袋即食</p>
+							<p class="guess-price"><span>￥</span>30.00</p>
+							<span class="guess-xiangsi">找相似</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess2.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>金龙鱼 盘锦大米 5kg袋装糠米</p>
+							<p class="guess-price"><span>￥</span>29.90</p>
+							<span class="guess-xiangsi">找相似</span>
+							<span class="guess-loco">抢</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess3.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>年货 禧美海产 厄瓜多尔白虾</p>
+							<p class="guess-price"><span>￥</span>106.00</p>
+							<span class="guess-xiangsi">找相似</span>
+							<span class="guess-loco">拼购</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess4.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>好吃点 饼干 零食 香脆核桃饼干800g</p>
+							<p class="guess-price"><span>￥</span>16.90</p>
+							<span class="guess-xiangsi">找相似</span>
+							<span class="guess-loco">拼购</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess5.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>恒都 阿根廷进口牛腩冷冻排酸牛肉1000g</p>
+							<p class="guess-price"><span>￥</span>45.50</p>
+							<span class="guess-xiangsi">找相似</span>
+							<span class="guess-loco">拼购</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess6.jpg" alt="">
+							<p class="guess-name">伊利安慕希原味酸奶250G*12</p>
+							<p class="guess-price"><span>￥</span>53.90</p>
+							<span class="guess-xiangsi">找相似</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess7.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>三只松鼠年货大礼包1335g/9袋</p>
+							<p class="guess-price"><span>￥</span>88.00</p>
+							<span class="guess-xiangsi">找相似</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess8.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>三只松鼠手剥巴达木120g</p>
+							<p class="guess-price"><span>￥</span>29.90</p>
+							<span class="guess-xiangsi">找相似</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess9.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>三只松鼠碧根果120g</p>
+							<p class="guess-price"><span>￥</span>32.90</p>
+							<span class="guess-xiangsi">找相似</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess10.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>爱乡亲 糕点 面包 手撕面包800g</p>
+							<p class="guess-price"><span>￥</span>14.90</p>
+							<span class="guess-xiangsi">找相似</span>
+							<span class="guess-loco">拼购</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess11.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>好吃点 饼干 零食 高倩粗粮800g</p>
+							<p class="guess-price"><span>￥</span>16.90</p>
+							<span class="guess-xiangsi">找相似</span>
+							<span class="guess-loco">拼购</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess12.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>三只松鼠开心果100g</p>
+							<p class="guess-price"><span>￥</span>45.90</p>
+							<span class="guess-xiangsi">找相似</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess13.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>福临门 甄选东北大米5kg</p>
+							<p class="guess-price"><span>￥</span>29.90</p>
+							<span class="guess-xiangsi">抢</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess14.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>达利园 糕点 面包 零食 蛋糕 600g</p>
+							<p class="guess-price"><span>￥</span>11.90</p>
+							<span class="guess-xiangsi">找相似</span>
+							<span class="guess-loco">拼购</span>
+						</a>
+					</li>
+					<li class="guess-list">
+						<a href="javascript:;">
+							<img src="image/guess15.jpg" alt="">
+							<p class="guess-name"><span class="guess-ziying">自营</span>华夏传承酸辣粉桶装136*3桶</p>
+							<p class="guess-price"><span>￥</span>30.00</p>
+							<span class="guess-xiangsi">找相似</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer clearfix">
+		<div class="footer-end">
+			<span class="heng heng1"></span>
+			<p class="end-name">END</p>
+			<span class="heng heng2"></span>
+		</div>
+		<div class="container">
+			<div class="quckly">
+				<ul>
+					<li class="quckly-list">
+						<a href="javascript">
+							<span class="quckly-cube"><i class="iconfont">&#xef08;</i></span>
+							<p class="quckly-name">正品保障</p>
+						</a>
+						<p class="quckly-desc">正品保障，提供发票</p>
+					</li>
+					<li class="quckly-list">
+						<a href="javascript">
+							<span class="quckly-cube"><i class="iconfont">&#xef08;</i></span>
+							<p class="quckly-name">极速物流</p>
+						</a>
+						<p class="quckly-desc">如约送货，送货入户</p>
+					</li>
+					<li class="quckly-list">
+						<a href="javascript">
+							<span class="quckly-cube"><i class="iconfont">&#xef08;</i></span>
+							<p class="quckly-name">售后无忧</p>
+						</a>
+						<p class="quckly-desc">30天包退，365天包换</p>
+					</li>
+					<li class="quckly-list">
+						<a href="javascript">
+							<span class="quckly-cube"><i class="iconfont">&#xef08;</i></span>
+							<p class="quckly-name">特色服务</p>
+						</a>
+						<p class="quckly-desc">私人订制家电套餐</p>
+					</li>
+					<li class="quckly-list">
+						<a href="javascript">
+							<span class="quckly-cube"><i class="iconfont">&#xef08;</i></span>
+							<p class="quckly-name">帮助中心</p>
+						</a>
+						<p class="quckly-desc">您的购物指南</p>
+					</li>
+				</ul>
+			</div>
+			<div class="buy">
+				<div class="buy-left">
+					<dl>
+						<dt>购物指南</dt>
+						<dd><a href="#">导购演示</a></dd>
+						<dd><a href="#">免费注册</a></dd>
+						<dd><a href="#">会员等级</a></dd>
+						<dd><a href="#">常见问题</a></dd>
+						<dd><a href="#">品牌大全</a></dd>
+					</dl>
+					<dl>
+						<dt>支付方式</dt>
+						<dd><a href="#">苏宁支付</a></dd>
+						<dd><a href="#">网银支付</a></dd>
+						<dd><a href="#">快捷支付</a></dd>
+						<dd><a href="#">分期付款</a></dd>
+						<dd><a href="#">货到付款</a></dd>
+						<dd><a href="#">任性付支付</a></dd>
+					</dl><dl>
+						<dt>物流配送</dt>
+						<dd><a href="#">免运费政策</a></dd>
+						<dd><a href="#">物流配送服务</a></dd>
+						<dd><a href="#">签收验货</a></dd>
+						<dd><a href="#">物流查询</a></dd>
+					</dl><dl>
+						<dt>售后服务</dt>
+						<dd><a href="#">退换货政策</a></dd>
+						<dd><a href="#">贵就陪</a></dd>
+						<dd><a href="#">维修/安装</a></dd>
+						<dd><a href="#">订单修改</a></dd>
+						<dd><a href="#">退换货申请</a></dd>
+						<dd><a href="#">我的发票</a></dd>
+					</dl><dl>
+						<dt>商家服务</dt>
+						<dd><a href="#">商家入驻</a></dd>
+						<dd><a href="#">培训中心</a></dd>
+						<dd><a href="#">广告服务</a></dd>
+						<dd><a href="#">商家帮助</a></dd>
+						<dd><a href="#">服务市场</a></dd>
+						<dd><a href="#">规则中心</a></dd>
+					</dl>
+				</div>
+				<div class="buy-right">
+					<div class="buy-cube">
+						<p class="shen">身边苏宁</p>
+						<p class="city">全国300多个城市，上万个门店和服务终端期待您的光临，为您提供最贴心的服务！</p>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</footer>
+
+	<section class="end ">
+		<div class="container">
+			<div class="middle">
+				<p class="end-middle">
+					<a href="javascript:;">苏宁互联</a>
+					<span>|</span>
+					<a href="javascript:;">苏宁金融</a>
+					<span>|</span>
+					<a href="javascript:;">苏宁支付</a>
+					<span>|</span>
+					<a href="javascript:;">PP视频</a>
+					<span>|</span>
+					<a href="javascript:;">红孩子</a>
+					<span>|</span>
+					<a href="javascript:;">苏宁物流</a>
+					<span>|</span>
+					<a href="javascript:;">手机苏宁</a>
+					<span>|</span>
+					<a href="javascript:;">零售云</a>
+					<span>|</span>
+					<a href="javascript:;">苏宁云</a>
+					<span>|</span>
+					<a href="javascript:;">知识产权举报</a>
+					<span>|</span>
+					<a href="javascript:;">投资者关系</a>
+				</p>
+				<p class="end-middle">
+					<a href="javascript:;">联系我们</a>
+					<span>|</span>
+					<a href="javascript:;">诚聘英才</a>
+					<span>|</span>
+					<a href="javascript:;">供应商入住</a>
+					<span>|</span>
+					<a href="javascript:;">广告平台</a>
+					<span>|</span>
+					<a href="javascript:;">苏宁联盟</a>
+					<span>|</span>
+					<a href="javascript:;">苏宁招标</a>
+					<span>|</span>
+					<a href="javascript:;">友情链接</a>
+					<span>|</span>
+					<a href="javascript:;">隐私声明</a>
+					<span>|</span>
+					<a href="javascript:;">用户体验提升计划</a>
+					<span>|</span>
+					<a href="javascript:;">股东会员计划</a>
+				</p>
+			</div>
+			<div class="brand">
+				<p class="end-brand">
+					<a href="javascript:;">Copyright© 2002-2019，苏宁易购集团股份有限公司版权所有</a>
+					<span>|</span>
+					<a href="javascript:;"> 苏公网安备 32010202010078号</a>
+					<span>|</span>
+					<a href="javascript:;"> 苏ICP备10207551号-4</a>
+				</p>
+				<p class="end-brand">
+					<a href="javascript:;">合字B2-20180025</a>
+					<span>|</span>
+					<a href="javascript:;">合字A1.B1.B2-20180017</a>
+					<span>|</span>
+					<a href="javascript:;">出版物经营许可证新出发苏批字第A-243号</a>
+					<span>|</span>
+					<a href="javascript:;">互联网药品信息服务资格证书（苏）-非经营性-2016-0005</a>
+				</p>
+				<p class="end-brand">
+					<a href="javascript:;">经营证照</a>
+					<span>|</span>
+					<a href="javascript:;">医疗器械网络交易服务第三方平台备案凭证-（苏）网械平台备字（2018）第00052号</a>
+					<span>|</span>
+					<a href="javascript:;">网络文化经营许可证：苏网文〔2018〕10580-203号</a>
+				</p>
+			</div>
+			<div class="img">
+				<a href="javascript:;"><img src="image/end1.png" alt=""></a>
+				<a href="javascript:;"><img src="image/end2.png" alt=""></a>
+				<a href="javascript:;"><img src="image/end3.png" alt=""></a>
+				<a href="javascript:;"><img src="image/end4.png" alt=""></a>
+				<a href="javascript:;"><img src="image/end5.png" alt=""></a>
+			</div>
+		</div>
+	</section>
 </body>
+<script src="JavaScript/index.js"></script>
+<script src="JavaScript/util.js"></script>
 </html>
